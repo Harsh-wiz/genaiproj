@@ -8,14 +8,6 @@ In this competition, you are given short segments of electrocardiogram (ECG) sig
 
 This is a supervised multiclass classification problem on one-dimensional time-series data. Each row in the dataset represents one heartbeat extracted from a real hospital ECG recording.
 
-Start
-
-Aug 21, 2026
-Close
-
-Aug 25, 2026
-Evaluation
-Metric
 Submissions are evaluated using Macro F1-Score.
 
 The F1-Score for a single class is the harmonic mean of precision and recall for that class:
@@ -24,10 +16,13 @@ F1_class = 2 × (Precision × Recall) / (Precision + Recall)
 where:
 
 Precision = (true positives) / (true positives + false positives)
+
 Recall = (true positives) / (true positives + false negatives)
+
 The Macro F1-Score is the unweighted arithmetic mean of the per-class F1-Scores across all four classes:
 
 Macro F1 = (F1_class0 + F1_class1 + F1_class2 + F1_class3) / 4
+
 This means every class contributes equally to your score, regardless of how many examples that class has in the test set.
 
 A score of 1.0 indicates perfect classification. A score near 0.25 indicates performance close to random guessing
